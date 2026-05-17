@@ -1,4 +1,3 @@
-# En proceso de crear una calculadora con distintas funciones 
 # Preguntamos por la operacion que quiere realizar el usuario dejando claro las opciones
 funcion = input ("Introduce la operacion que quieres realizar(Suma, Resta, Multiplicacion, Division):")
 
