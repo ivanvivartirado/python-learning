@@ -1,0 +1,4 @@
+ERROR: disco lleno
+ERROR: conexion perdida
+ERROR: servicio caido
+ERROR: fallo al subir archivo

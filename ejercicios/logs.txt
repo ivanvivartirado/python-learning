@@ -1,0 +1,8 @@
+INFO: sistema iniciado
+ERROR: disco lleno
+INFO: usuario conectado
+ERROR: conexion perdida
+WARNING: memoria alta
+ERROR: servicio caido
+INFO: backup completado
+ERROR: fallo al subir archivo
