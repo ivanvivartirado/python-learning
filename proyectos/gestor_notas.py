@@ -1,8 +1,9 @@
+print ("-----------------------------")
 print ("Que quieres hacer?")
 print ("1. Ver notas")
 print ("2. Agregar nota")
 print ("3. Salir")
-
+print ("-----------------------------")
 opcion = input ("Elige una opcion:")
 
 if opcion == "1":
