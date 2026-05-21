@@ -1,4 +1,4 @@
-estadisticas = [5, 9, 3, 10, 7, 10]
+estadisticas = input ("Introduce las estadisticas: ")
 
 print ("El total de las estadisticas es: ", sum(estadisticas))
 print ("La cantidad de estadisticas es: ", len(estadisticas))
