@@ -1,0 +1,6 @@
+192.168.1.1 - conexión OK
+10.0.0.5 - conexión OK
+192.168.1.15 - error timeout
+172.16.0.1 - conexión OK
+192.168.1.1 - conexión OK
+8.8.8.8 - DNS query

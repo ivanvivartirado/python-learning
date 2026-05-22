@@ -1,0 +1,46 @@
+═══════════════════════════════════════════════════════
+  📋 MIS ALIAS PERSONALES
+═══════════════════════════════════════════════════════
+
+🐍 PYTHON / DESARROLLO
+───────────────────────
+pydir     → cd /mnt/c/Users/Ivan/python-learning/python-learning
+            (Ir a mi carpeta de aprendizaje Python)
+
+🏠 HOMELAB / SERVIDORES
+───────────────────────
+homelab   → cd ~/mi-homelab/scripts
+            (Ir a scripts del homelab)
+
+ssh homelab
+            → ssh admin@192.168.0.105 (o tu servidor nexus)
+            (Conectar por SSH al servidor homelab)
+
+🖥️  SISTEMA
+───────────────────────
+ll        → ls -la
+            (Listar archivos con detalles)
+
+..        → cd ..
+            (Subir un directorio)
+
+...       → cd ../..
+            (Subir dos directorios)
+
+═══════════════════════════════════════════════════════
+  📁 ARCHIVOS DE CONFIGURACIÓN
+═══════════════════════════════════════════════════════
+
+Zsh  → ~/.zshrc   (donde van los alias en tu terminal actual)
+Bash → ~/.bashrc   (para terminales Bash)
+
+═══════════════════════════════════════════════════════
+  ➕ CÓMO AÑADIR UN NUEVO ALIAS
+═══════════════════════════════════════════════════════
+
+1. Edita el archivo:   nano ~/.zshrc
+2. Añade al final:     alias nombre='comando'
+3. Recarga:            source ~/.zshrc
+4. Verifica:           alias | grep nombre
+
+═══════════════════════════════════════════════════════
