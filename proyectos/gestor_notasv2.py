@@ -78,17 +78,17 @@ class GestorNotas:
 
 
 def mostrar_menu():
-    print("\n" + "="*40)
-    print("  📒 GESTOR DE NOTAS v2.0")
-    print("="*40)
+    print("\n" + "=" * 40)
+    print("  GESTOR DE NOTAS v2.0")
+    print("=" * 40)
     print("1. Ver todas las notas")
-    print("2. Ver por categoría")
+    print("2. Ver por categoria")
     print("3. Buscar nota")
     print("4. Agregar nota")
     print("5. Eliminar nota")
-    print("6. Estadísticas")
+    print("6. Estadisticas")
     print("7. Salir")
-    print("="*40)
+    print("=" * 40)
 
 
 def main():
@@ -101,12 +101,12 @@ def main():
         if opcion == "1":
             notas = gestor.listar()
             if not notas:
-                print("📭 No hay notas.")
+                print("No hay notas.")
             for n in notas:
                 print(f"  {n}")
                 
         elif opcion == "2":
-            cat = input("Categoría: ").strip()
+            cat = input("Categoria: ").strip()
             notas = gestor.listar(cat)
             for n in notas:
                 print(f"  {n}")
@@ -114,37 +114,37 @@ def main():
         elif opcion == "3":
             texto = input("Buscar: ").strip()
             resultados = gestor.buscar(texto)
-            print(f"🔍 {len(resultados)} encontradas:")
+            print(f"{len(resultados)} encontradas:")
             for n in resultados:
                 print(f"  {n}")
                 
         elif opcion == "4":
             contenido = input("Contenido: ").strip()
-            categoria = input("Categoría [general]: ").strip() or "general"
+            categoria = input("Categoria [general]: ").strip() or "general"
             nota = gestor.agregar(contenido, categoria)
-            print(f"✅ Guardada: {nota}")
+            print(f"Guardada: {nota}")
             
         elif opcion == "5":
             try:
                 id_nota = int(input("ID a eliminar: "))
                 if gestor.eliminar(id_nota):
-                    print("🗑️ Eliminada.")
+                    print("Eliminada.")
                 else:
-                    print("❌ ID no encontrado.")
+                    print("ID no encontrado.")
             except ValueError:
-                print("❌ ID debe ser número.")
+                print("ID debe ser numero.")
                 
         elif opcion == "6":
             stats = gestor.estadisticas()
-            print(f"\n📊 Total: {stats['total']}")
-            print(f"📁 Categorías: {stats['categorias']}")
-            print(f"🕐 Última: {stats['ultima_nota']}")
+            print(f"\nTotal: {stats['total']}")
+            print(f"Categorias: {stats['categorias']}")
+            print(f"Ultima: {stats['ultima_nota']}")
             
         elif opcion == "7":
-            print("👋 Hasta luego.")
+            print("Hasta luego.")
             break
         else:
-            print("❌ Opción no válida.")
+            print("Opcion no valida.")
 
 
 if __name__ == "__main__":
